@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  background-color: #c1cdde;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-homepage {
+  max-width: 100%;
+  margin: 2%;
+  border-radius: 50px;
+  background-color: white;
+}
+
+/* NAVBAR START */
+.container-navbar {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem 7%;
+  margin: 2%;
+}
+
+.container-navbar .navbar-nav a {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+  color: black;
+}
+
+.container-navbar .navbar-contact a {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+  color: black;
+}
+
+.container-navbar .navbar-nav a:hover {
+  color: #ffc836;
+}
+
+.container-navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #ffc836;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.container-navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.container-navbar .navbar-contact a:hover {
+  color: #ffc836;
+}
+
+.container-navbar .navbar-contact a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #ffc836;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.container-navbar .navbar-contact a:hover::after {
+  transform: scaleX(1);
+}
+
+/* NAVBAR END */
+
+/* HERO START */
+.container-judul-artikel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 2rem 7% 1.4rem;
+}
+.container-judul-artikel h1 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #000;
+}
+
+.container-judul-artikel .judul-satu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  padding: 2rem 7%;
+  margin-bottom: 4rem;
+  background-color: #fff;
+  border: 5px solid #c1cdde;
+  border-radius: 25px;
+}
+
+.gambar-judul-satu img {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 0 10%;
+  width: 430px;
+  max-width: 100%;
+  background-color: #c1cdde;
+}
+
+.konten-judul-satu {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+}
+
+.konten-judul-satu a {
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+}
+
+.konten-judul-satu a:hover {
+  color: #ffc836;
+}
+/* HERO SECTION END */
+
+/* FOOTER */
+.container-footer {
+  background-color: #ffc836;
+  min-height: auto;
+  display: flex;
+  padding: 1rem 7%;
+  border-radius: 0 0 50px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-footer .footer-content p {
+  font-weight: 300;
+}
+
+.container-footer .footer-contact a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+  font-weight: 500;
+}

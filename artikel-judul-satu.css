@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  background-color: #c1cdde;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-homepage {
+  max-width: 2000vh;
+  margin: 2%;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+/* NAVBAR START */
+.container-navbar {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem 7%;
+  margin: 2%;
+}
+
+.container-navbar .navbar-nav a {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+  color: #2b2b2b;
+}
+
+.container-navbar .navbar-contact a {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+  color: #2b2b2b;
+}
+
+.container-navbar .navbar-nav a:hover {
+  color: #ffc836;
+}
+
+.container-navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #ffc836;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.container-navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.container-navbar .navbar-contact a:hover {
+  color: #ffc836;
+}
+
+.container-navbar .navbar-contact a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #ffc836;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.container-navbar .navbar-contact a:hover::after {
+  transform: scaleX(1);
+}
+
+/* NAVBAR END */
+
+/* HERO SECTION */
+.container-artikel {
+  min-height: auto;
+  background-color: #fff;
+}
+
+.hero-artikel img {
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 5px solid #ffc836;
+  border-top: 5px solid #ffc836;
+}
+
+.wrapper-artikel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-artikel .content-artikel {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 3rem 7%;
+}
+
+.content-artikel h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content-artikel .penulis {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.content-artikel .penulis a {
+  color: #ffc836;
+}
+.content-artikel #paragraf-satu,
+#paragraf-dua,
+#paragraf-tiga {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.wrapper-artikel .sidebar-artikel {
+  background-color: #fff;
+  height: 100%;
+  width: 500px;
+  padding: 3rem 2%;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+.wrapper-artikel .sidebar-artikel h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.wrapper-artikel .sidebar-artikel img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.wrapper-artikel .sidebar-artikel p {
+  font-size: 0.8rem;
+}
+
+/* FOOTER */
+
+.container-footer {
+  background-color: #ffc836;
+  min-height: auto;
+  display: flex;
+  padding: 1rem 7%;
+  border-radius: 0 0 50px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-footer .footer-content p {
+  font-weight: 300;
+}
+
+.container-footer .footer-contact a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+  font-weight: 500;
+}

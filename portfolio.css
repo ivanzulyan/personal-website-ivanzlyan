@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  background-color: #c1cdde;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-homepage {
+  max-width: 100%;
+  margin: 2%;
+  border-radius: 50px;
+  background-color: white;
+}
+
+/* NAVBAR START */
+.container-navbar {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem 7%;
+  margin: 2%;
+}
+
+.container-navbar .navbar-nav a {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+  color: black;
+}
+
+.container-navbar .navbar-contact a {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+  color: black;
+}
+
+.container-navbar .navbar-nav a:hover {
+  color: #ffc836;
+}
+
+.container-navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #ffc836;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.container-navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.container-navbar .navbar-contact a:hover {
+  color: #ffc836;
+}
+
+.container-navbar .navbar-contact a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #ffc836;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.container-navbar .navbar-contact a:hover::after {
+  transform: scaleX(1);
+}
+
+/* NAVBAR END */
+
+/* KONTEN */
+.container-portfolio h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 7%;
+  align-items: center;
+  gap: 20px;
+}
+
+.row .card {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  height: auto;
+  align-items: center;
+  padding: 1rem;
+  border: 5px solid #c1cdde;
+  border-radius: 20px;
+}
+
+.row .card .gambar img {
+  width: 20rem;
+  height: auto;
+  border-radius: 20px;
+}
+
+.row .card .judul {
+  padding: 1rem;
+}
+
+.row .card .judul h2 {
+  color: black;
+  text-align: center;
+  margin: 1rem;
+}
+
+.row .card .judul p {
+  color: black;
+  text-align: justify;
+}
+
+/* FOOTER */
+.container-footer {
+  background-color: #ffc836;
+  min-height: auto;
+  display: flex;
+  padding: 1rem 7%;
+  border-radius: 0 0 50px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-footer .footer-content p {
+  font-weight: 300;
+}
+
+.container-footer .footer-contact a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+  font-weight: 500;
+}
